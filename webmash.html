@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+    Student Name:Rajaraman Govindasamy
+	ID: 1001165700
+-->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display Address with Weather Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel='stylesheet' href='style.css' />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+	<body onload="initMap();">
+	<div class="container-fluid">
+      <div class="row vertical-center">
+        <div class = "col-md-12 intromsg">
+		<p class="justify">Web Mashup: Location and Weather details</p>
+		</div>
+		</div>
+		</div>
+	<div class="container-fluid">
+		<div class="col-md-6" id="map" style="width: 600px; height: 500px;"></div><br/>
+		<div class="col-md-6" id="output">
+			<div class="form-group">
+			<label for="comment">Weather details for the location:</label>
+			<textarea class="form-control" rows="15" id="displayarea"></textarea>
+			</div>
+			<input type="button" id="reset1" onclick = "cleardata();" value="Clear" />
+		</div>
+		</div>
+	   <script type="text/javascript" src="http://localhost/project1/webmash.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa8zCCWLQ0WvF6-vDwb0scg8C42UqKBwk" type="text/javascript"></script>
+	</body>
+</html>
